@@ -8,4 +8,19 @@
  */
 
 // Your Code Here
-let num; // Number
+let num = 1945; // Number
+let isPalindrome;
+
+while (!isPalindrome) {
+	num++;
+	let toString = String(num); // Ubah ke string
+	let reverseNum = '';
+
+    // Membalik urutan karakter
+	for (let i = toString.length - 1; i >= 0; i--) {
+		reverseNum += toString[i];
+	}
+	isPalindrome = num == reverseNum; // Cek angka awal apakah sama dengan setelah dibalik
+}
+
+console.log(num);
